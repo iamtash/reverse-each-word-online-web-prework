@@ -1,12 +1,8 @@
-def reverse_and_collect(sentence)
-  sentence.collect do |word|
-    word.reverse
-  end
-end
+require 'pry'
+
+
 
 
 def reverse_each_word(sentence)
-  sentence_as_array = sentence.split(" ")
-
-  reverse_and_collect(sentence_as_array).join(" ")
+  sentence.split(" ").collect { |w| w.reverse }.join(' ')
 end
